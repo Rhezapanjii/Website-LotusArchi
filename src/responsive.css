@@ -1,0 +1,175 @@
+@media (max-width: 576px) { 
+    .btn-lotus{
+        padding: 10px 20px;
+    }
+    .user-dropdown-item{
+        padding: 10px;
+    }
+    /* navbar */
+    .lotus-navbar{
+        padding: 30px 15px 10px;
+        border-bottom: 1px solid rgb(240, 236, 236);
+    }
+    .lotus-navbar-2{
+        padding: 20px;
+    }
+    /* banner */
+    .lotus-banner{
+        padding: 10px 36px;
+        font-size: 20px;
+        line-height: 32px;
+        white-space: nowrap;
+        overflow: hidden;
+        margin:0;
+    }
+    /* content */
+    .lotus-header, .lotus-collection, .lotus-choosing-us, .lotus-contact, .lotus-about-us{
+        padding: 0 20px 80px;
+    }
+    .lotus-content-title{
+        padding-bottom: 36px;
+        font-size: 32px;
+        line-height: 31px;
+    }
+    /* header */
+    .lotus-header{
+        padding-top: 48px;
+    }
+    .lotus-header .col-md-5 img{
+        margin-left: 0px;
+    }
+    .lotus-header h1{
+        font-size: 36px;
+        line-height: 35px;
+        margin-bottom: 20px;
+    }
+    .lotus-header p{
+        margin-bottom: 20px;
+    }
+    /* collection */
+    .lotus-collection .lotus-content-title a{
+        font-size: 14px;
+        padding-top: 10px;
+        float: left;
+    }
+    .lotus-collection .lotus-content-body .row .col-md-6 .description{
+        padding: 14px;
+    }
+    /* contact */
+    .lotus-contact .lotus-content-title{
+        font-size: 32px;
+        line-height: 31px;
+    }
+    .padding-first-picture{
+        padding-bottom: 10px;
+    }
+    .lotus-contact .lotus-content-body a{
+        text-decoration: none;
+        margin-top: 30px;
+    }
+    /* why choosing us */
+    .lotus-choosing-us .lotus-content-body .row .col-md-6 img{
+        display: none;
+    }
+    .tb{
+        font-size: 28px;
+    }
+    /* about */
+    .lotus-about-us .lotus-about-us-description p{
+        padding-bottom: 5px;
+        font-size: 18px;
+    }
+    /* forgot password */
+    .reset-password, .create-account, .sign-in{
+        padding: 10px;
+        margin : 20px 0;
+    }
+    .create-account{
+        padding: 50px 10px 0 ;
+        border-left: none;
+        border-top: 1px solid #F8A98E;
+    }
+    /* footer */
+    .footer{
+        padding: 50px 20px;
+    }
+    .footer-section-header{
+        margin-bottom: 20px;
+    }
+    .footer-social-media{
+        margin: 0;
+        padding: 10px 0;
+    }
+    .footer-standard-info{
+        margin: 50px 0;
+    }
+    .icons-social-media{
+        margin: 20px  0;
+    }
+    /* product list */
+    .lotus-product-list{
+        padding : 30px 10px;
+    }
+    .lotus-product-list .lotus-content-title{
+        font-size: 32px;
+        line-height: 31px;
+    }
+    .filters{
+        margin-bottom: 20px;
+    }
+    .filters .filters-title h2{
+        font-size: 28px;
+        line-height: 27px;
+    }
+    .filters-body-weight h3, .filters-body-collection h3, .filters-body-price h3{
+        font-size: 20px;
+    }
+    /* lotus order */
+    .lotus-order-unpaid{
+        padding: 10px;
+    }
+    .total-harga{
+        border-left: none;
+    }
+    .item-order-footer{
+        justify-content: center;
+    }
+    .item-order-footer a{
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    /* about page, verify dll */
+    .lotus-about{
+        padding: 20px;
+    }
+    .lotus-sub-title{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 48px;
+    }
+    .lotus-sub-body{
+        padding-top: 24px;
+    }
+    
+    .lotus-sub-body p{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .lotus-sub-body ol, .lotus-sub-body ul{
+        font-size: 20px;
+        line-height: 24px;
+        margin-left: 30px;
+    }
+    .lotus-sub-body .vision {
+        position: static;
+        height: auto;
+        margin-top: 20px;
+    }
+    .lotus-sub-body .vision2 {
+        position: static;
+        height: auto;
+    }
+    .lotus-sub-body .vision > img, .overlay-text, .lotus-sub-body .vision2 > img, .overlay-text {
+        position:static;
+    }
+}

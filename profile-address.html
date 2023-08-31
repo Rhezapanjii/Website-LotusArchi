@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/responsive.css">
+    <title>Order - Unpaid</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- navbar -->
+        <header id="header">
+            <div class="lotus-navbar">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-md-4 d-none d-lg-block">
+                            <a href="http://" class="d-flex justify-content-start align-items-center nav-link">
+                                <i class="ri-customer-service-line ri-xl"></i>
+                                <span class="p-2">Contact Us</span>
+                            </a>
+                        </div>
+                        <div class="col-md-4 justify-content-center d-flex">
+                            <a class="navbar-brand" href="#">
+                                <img class="img-fluid" src="src/img/logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col-md-4 justify-content-end d-none d-lg-flex">
+                            <a href="" class="d-flex justify-content-end nav-link">
+                                <i class="ri-search-line ri-xl px-2"></i>
+                            </a>
+                            <div class="dropdown">
+                                <a href="" class="d-flex justify-content-end nav-link" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                    data-offset="-250,10">
+                                    <i class="ri-user-line ri-xl px-2"></i>
+                                </a>
+                                <div class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item user-dropdown-item" href="#">Profile</a>
+                                    <a class="dropdown-item user-dropdown-item" href="#">Order</a>
+                                    <a class="dropdown-item user-dropdown-item" href="#">Settings</a>
+                                    <a class="dropdown-item user-dropdown-item" href="#">Logout</a>
+                                </div>
+                            </div>
+                            <a href="" class="d-flex justify-content-end nav-link">
+                                <i class="ri-shopping-bag-3-line ri-xl px-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light lotus-navbar-2">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="lotus-nav-links d-none d-lg-flex justify-content-center ">
+                        <ul>
+                            <li><a href="" class="active">Home</a></li>
+                            <li><a href="">Promo</a></li>
+                            <li><a href="">Shop</a></li>
+                            <li><a href="">Verify</a></li>
+                            <li> <a href="">Easy Buyback</a> </li>
+                        </ul>
+                    </div>
+                    <div class="form-outline d-lg-none d-sm-block">
+                        <input type="search" id="form1" class="form-control" placeholder="Type query"
+                            aria-label="Search" />
+                    </div>
+                    <div class="dropleft">
+                        <a href="" class="d-flex align-items-center nav-link-mobile d-lg-none d-sm-flex"
+                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="ri-user-line ri-xl"></i>
+                        </a>
+                        <div class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item user-dropdown-item" href="#">Profile</a>
+                            <a class="dropdown-item user-dropdown-item" href="#">Order</a>
+                            <a class="dropdown-item user-dropdown-item" href="#">Settings</a>
+                            <a class="dropdown-item user-dropdown-item" href="#">Logout</a>
+                        </div>
+                    </div>
+                    <a href="" class="d-flex align-items-center d-lg-none d-sm-flex nav-link-mobile">
+                        <i class="ri-shopping-bag-3-line ri-xl"></i>
+                    </a>
+                    <div class="d-lg-none d-sm-flex collapse" id="navbarToggleExternalContent">
+                        <div class="nav-mobile">
+                            <a class="d-flex justify-content-end p-2" data-toggle="collapse"
+                                data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                                aria-expanded="true" aria-label="Toggle navigation">
+                                <i class="ri-close-line ri-2x closed-menu"></i>
+                            </a>
+                            <ul>
+                                <li><a href="" class="nav-link active">Home</a></li>
+                                <li><a href="" class="nav-link">Promo</a></li>
+                                <li><a href="" class="nav-link">Shop</a></li>
+                                <li><a href="" class="nav-link">Verify</a></li>
+                                <li> <a href="" class="nav-link">Easy Buyback</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- content -->
+        <section>
+            <div class="lotus-content">
+                <!-- collection -->
+                <div class="lotus-order-unpaid">
+                    <div class="container-fluid">
+                        <a href="http://" class="d-flex align-items-center back-to-home">
+                            <i class="ri-arrow-left-s-line ri-2x"></i>
+                            <h4>Back To Homepage</h4>
+                        </a>
+                        <div class="lotus-content-title">
+                            Your Account
+                        </div>
+                        <div class="lotus-content-body">
+                            <div class="row tab-order">
+                                <div class="tab-item text-center">Personal Information</div>
+                                <div class="tab-item tab-active text-center">Addresses</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5 jarak-content-address">
+                                <div class="col-md-12 mb-1">
+                                    <h2>Shipping Address</h2>
+                                </div>
+                                <div class="side-title bg-white">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="content-addr">
+                                                <div class="row align-items-center">
+                                                    <h3 class="px-3">Rumah Utama</h3>
+                                                    <span class="">08123456789</span>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-8">
+                                                        <p>
+                                                            Jalan ABC Blok A Nomor 1. RT 01/02 Kecamatan Sukaasih,
+                                                            Cimahi Utara, Kota Cimahi, 40511
+                                                            Jawa Barat
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-md-4 d-flex justify-content-center align-items-end">
+                                                        <span class="edit-address" data-toggle="modal"
+                                                            data-target="#exampleModal">Edit Address</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 jarak-content-address">
+                                <div class="col-md-12 mb-1">
+                                    <h2>Billing Address</h2>
+                                </div>
+                                <div class="side-title bg-white">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="content-addr">
+                                                <div class="row align-items-center">
+                                                    <h3 class="px-3">Kantor</h3>
+                                                    <span class="">08123456789</span>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-8">
+                                                        <p>
+                                                            Jalan ABC Blok A Nomor 1. RT 01/02 Kecamatan Sukaasih,
+                                                            Cimahi Utara, Kota Cimahi, 40511
+                                                            Jawa Barat
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-md-4 d-flex justify-content-center align-items-end">
+                                                        <span class="edit-address" data-toggle="modal"
+                                                            data-target="#exampleModal">Edit Address</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="footer-section-header">
+                                    Client Care
+                                </div>
+                                <ul class="footer-section-list">
+                                    <li>
+                                        <a href="http://">Contact Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://">Verify</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://">FAQ</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://">Quality Police</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="footer-section-header">
+                                    About Lotus Archi
+                                </div>
+                                <ul class="footer-section-list">
+                                    <li>
+                                        <a href="http://">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://">Terms & Condition</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://">Our Services</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="footer-section-header">
+                                    Quick Links
+                                </div>
+                                <ul class="footer-section-list">
+                                    <li>
+                                        <a href="http://">Collection</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://">Promotion</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row footer-social-media d-flex justify-content-between my-2">
+                            <div class="d-flex align-items-center col-md-3 icons-social-media">
+                                <i class="ri-instagram-fill ri-xl pr-2"></i>
+                                <i class="ri-facebook-box-fill ri-xl pr-2"></i>
+                                <i class="ri-youtube-fill ri-xl pr-2"></i>
+                            </div>
+                            <div class="col-md-9">
+                                <img src="src/img/logobank.png" alt="" srcset="" class="d-none d-lg-block img-fluid">
+                                <img src="src/img/bankmobile.png" alt="" srcset="" class="d-lg-none d-sm-block img-fluid">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 footer-standard-info">
+                                <img src="src/img/image 34.png" alt="" srcset="" class="mr-3 img-fluid">
+                                <img src="src/img/image 34 (2).png" alt="" srcset="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-section-header">
+                            Address
+                        </div>
+                        <div class="footer-info-address">
+                            <h5>Lotus Archi (PT Elang Mulia Abadi Sempurna)</h5>
+                            <p>
+                                Menara Rajawali <br>
+                                Lantai 19, Jl. DR Ide Anak Agung Gede Agung, <br>
+                                Kawasan Mega Kuningan, <br>
+                                Jakarta Selatan 12950
+                            </p>
+                        </div>
+                        <div class="footer-info-address">
+                            <h5>Kawasan Industri Cimareme, Bandung</h5>
+                            <p>
+                                Jl. Industrial Cimareme 1 No. 8 <br>
+                                Cipendeuy Padalarang, Cipeundeuy, Padalarang, <br>
+                                Kabupaten Bandung Barat, <br>
+                                Jawa Barat 40553
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add New Address</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12 name-form ">
+                            <form>
+                                <div class="form-group">
+                                    <label class="mb-0" for="exampleFormControlTextarea1">
+                                        <h6>Address Name</h6>
+                                    </label>
+                                    <input type="text" class="form-control border rounded-0"
+                                        placeholder="Home, Office, Warehouse">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 name-form ">
+                            <form>
+                                <div class="form-group">
+                                    <label class="mb-0" for="exampleFormControlTextarea1">
+                                        <h6>First Name</h6>
+                                    </label>
+                                    <input type="text" class="form-control border rounded-0" placeholder="First Name">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-6 email-form">
+                            <form>
+                                <div class="form-group">
+                                    <label class="mb-0" for="exampleFormControlTextarea1">
+                                        <h6>Last Name</h6>
+                                    </label>
+                                    <input type="text" class="form-control border rounded-0" placeholder="Last Name">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 name-form ">
+                            <form>
+                                <div class="form-group">
+                                    <label class="mb-0" for="exampleFormControlTextarea1">
+                                        <h6>Address</h6>
+                                    </label>
+                                    <textarea class="form-control border rounded-0" id="exampleFormControlTextarea1"
+                                        placeholder="Input your Address" rows="4"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 name-form ">
+                            <form>
+                                <div class="form-group">
+                                    <label class="mb-0" for="exampleFormControlTextarea1">
+                                        <h6>District</h6>
+                                    </label>
+                                    <input type="text" class="form-control border rounded-0" placeholder="District">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-6 email-form">
+                            <form>
+                                <div class="form-group">
+                                    <label class="mb-0" for="exampleFormControlTextarea1">
+                                        <h6>Sub-District</h6>
+                                    </label>
+                                    <input type="text" class="form-control border rounded-0" placeholder="Sub-District">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 name-form ">
+                            <form>
+                                <div class="form-group">
+                                    <label class="mb-0" for="exampleFormControlTextarea1">
+                                        <h6>City</h6>
+                                    </label>
+                                    <input type="text" class="form-control border rounded-0" placeholder="City">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-6 email-form">
+                            <form>
+                                <div class="form-group">
+                                    <label class="mb-0" for="exampleFormControlTextarea1">
+                                        <h6>Province</h6>
+                                    </label>
+                                    <input type="text" class="form-control border rounded-0" placeholder="Province">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 name-form ">
+                            <form>
+                                <div class="form-group">
+                                    <label class="mb-0" for="exampleFormControlTextarea1">
+                                        <h6>Zip Code</h6>
+                                    </label>
+                                    <input type="text" class="form-control border rounded-0" placeholder="Zip Code">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <button class="btn btn-black w-100 p-3 justify-content-center mt-4">Save Address</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

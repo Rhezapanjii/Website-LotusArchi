@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/bootstrap-4.1.3/dist/css/bootstrap.min.css">
+    <link href="src/icon/RemixIcon-master/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/responsive.css">
+    <title>List Product</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- navbar -->
+        <header id="header">
+            <div class="lotus-navbar">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-md-4 d-none d-lg-block">
+                            <a href="http://" class="d-flex justify-content-start align-items-center nav-link">
+                                <i class="ri-customer-service-line ri-xl"></i>
+                                <span class="p-2">Contact Us</span>                        
+                            </a>
+                        </div>
+                        <div class="col-md-4 justify-content-center d-flex">
+                            <a class="navbar-brand" href="#">
+                                <img class="img-fluid" src="src/img/logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col-md-4 justify-content-end d-none d-lg-flex">
+                            <a href="" class="d-flex justify-content-end nav-link">
+                                <i class="ri-search-line ri-xl px-2"></i>
+                            </a>
+                            <div class="dropdown">
+                                <a href="" class="d-flex justify-content-end nav-link"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="-250,10">
+                                    <i class="ri-user-line ri-xl px-2"></i>
+                                </a>
+                                <div class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item user-dropdown-item" href="#">Profile</a>
+                                    <a class="dropdown-item user-dropdown-item" href="#">Order</a>
+                                    <a class="dropdown-item user-dropdown-item" href="#">Settings</a>
+                                    <a class="dropdown-item user-dropdown-item" href="#">Logout</a>
+                                </div>
+                            </div>
+                            <a href="" class="d-flex justify-content-end nav-link">
+                                <i class="ri-shopping-bag-3-line ri-xl px-2"></i>
+                            </a>     
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light lotus-navbar-2">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="lotus-nav-links d-none d-lg-flex justify-content-center ">
+                        <ul>
+                            <li><a href="" class="active">Home</a></li>
+                            <li><a href="">Promo</a></li>
+                            <li><a href="">Shop</a></li>
+                            <li><a href="">Verify</a></li>
+                            <li> <a href="">Easy Buyback</a> </li>
+                        </ul>
+                    </div>
+                    <div class="form-outline d-lg-none d-sm-block">
+                        <input type="search" id="form1" class="form-control" placeholder="Type query" aria-label="Search" />
+                      </div>
+                    <div class="dropleft">
+                        <a href="" class="d-flex align-items-center nav-link-mobile d-lg-none d-sm-flex"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                            <i class="ri-user-line ri-xl"></i>
+                        </a>
+                        <div class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item user-dropdown-item" href="#">Profile</a>
+                            <a class="dropdown-item user-dropdown-item" href="#">Order</a>
+                            <a class="dropdown-item user-dropdown-item" href="#">Settings</a>
+                            <a class="dropdown-item user-dropdown-item" href="#">Logout</a>
+                        </div>
+                    </div>
+                    <a href="" class="d-flex align-items-center d-lg-none d-sm-flex nav-link-mobile">
+                        <i class="ri-shopping-bag-3-line ri-xl"></i>
+                    </a>
+                    <div class="d-lg-none d-sm-flex collapse" id="navbarToggleExternalContent">
+                        <div class="nav-mobile">
+                            <a class="d-flex justify-content-end p-2" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="true" aria-label="Toggle navigation">
+                                <i class="ri-close-line ri-2x closed-menu"></i>
+                            </a>
+                            <ul>
+                                <li><a href="" class="nav-link active">Home</a></li>
+                                <li><a href="" class="nav-link" >Promo</a></li>
+                                <li><a href="" class="nav-link">Shop</a></li>
+                                <li><a href="" class="nav-link">Verify</a></li>
+                                <li> <a href="" class="nav-link">Easy Buyback</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- content -->
+        <section>
+            <div class="lotus-content">
+                <!-- collection -->
+                <div class="lotus-product-list">
+                    <div class="container-fluid">
+                        <div class="lotus-content-title">
+                            Product List
+                        </div>
+                        <div class="lotus-content-body">
+                            <div class="row">
+                                <div class="col-md-3">
+                                  <div class="filters bg-white">
+                                    <div class="filters-title">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <h2>Filters</h2>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-end col-md-6">
+                                                <a href="">Clear all</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="filters-body-weight">
+                                        <h3>Weight</h3>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                0.5gr <span>(26)</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                0.5gr <span>(26)</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                1gr <span>(26)</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                3gr <span>(26)</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                5gr <span>(26)</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                10gr <span>(26)</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                25gr <span>(26)</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                50gr <span>(26)</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                100gr <span>(26)</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="filters-body-collection">
+                                        <h3>Collection</h3>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Justice Language <span>(26)</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Wonder Women <span>(26)</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Wedding <span>(26)</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Anniversary <span>(26)</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Birthday <span>(26)</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Inversment <span>(26)</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Gift <span>(26)</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="filters-body-price">
+                                        <h3>Price</h3>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                < Rp.500.000
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Rp.500.000 - Rp.2.000.000
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Rp.2.000.000 - Rp.5.000.000
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Rp.5000.000 - Rp.10.000.000
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                > Rp.10.000.000
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <hr>                                    
+                                  </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="row">
+                                        <div class="col-md-4 mb-30px">
+                                            <div class="product bg-white">
+                                                <div class="product-like">
+                                                    <i class="ri-heart-line ri-xl"></i>
+                                                </div>
+                                                <div class="image-product">
+                                                    <img class="img-fluid" src="src/img/LotusArchiAssets/2.jpg" alt="">
+                                                </div>
+                                                <button type="submit" class="btn col-12 mt-3 btn-des-product border-radius0" data-toggle="modal" data-target="#quickview" >Quick View</button>
+                                                <div class="description-product">
+                                                    <div class="row">
+                                                        <div class="col-md-8">
+                                                            <p class="product-name">Emas Antam 1gr</p>
+                                                            <h5 class="product-price">Rp980,748</h5>
+                                                        </div>
+                                                        <div class="col-md-4 d-flex justify-content-end align-items-center">
+                                                            <a href=""><i class="ri-add-fill ri-2x"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>        
+                                        </div>
+                                        <div class="col-md-4 mb-30px">
+                                            <div class="product bg-white">
+                                                <div class="product-like">
+                                                    <i class="ri-heart-line ri-xl"></i>
+                                                </div>
+                                                <div class="image-product">
+                                                    <img class="img-fluid" src="src/img/LotusArchiAssets/0,5 gr.jpg" alt="">
+                                                </div>
+                                                <button type="submit" class="btn col-12 mt-3 btn-des-product border-radius0" data-toggle="modal" data-target="#quickview" >Quick View</button>
+                                                <div class="description-product">
+                                                    <div class="row">
+                                                        <div class="col-md-8">
+                                                            <p class="product-name">Emas Antam 1gr</p>
+                                                            <h5 class="product-price">Rp980,748</h5>
+                                                        </div>
+                                                        <div class="col-md-4 d-flex justify-content-end align-items-center">
+                                                            <a href=""><i class="ri-add-fill ri-2x"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>    
+                                        </div>
+                                        <div class="col-md-4 mb-30px">
+                                            <div class="product bg-white">
+                                                <div class="product-like">
+                                                    <i class="ri-heart-line ri-xl"></i>
+                                                </div>
+                                                <div class="image-product">
+                                                    <img class="img-fluid" src="src/img/LotusArchiAssets/1 gr.jpg" alt="">
+                                                </div>
+                                                <button type="submit" class="btn col-12 mt-3 btn-des-product border-radius0" data-toggle="modal" data-target="#quickview" >Quick View</button>
+                                                <div class="description-product">
+                                                    <div class="row">
+                                                        <div class="col-md-8">
+                                                            <p class="product-name">Emas Antam 1gr</p>
+                                                            <h5 class="product-price">Rp980,748</h5>
+                                                        </div>
+                                                        <div class="col-md-4 d-flex justify-content-end align-items-center">
+                                                            <a href=""><i class="ri-add-fill ri-2x"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>      
+                                        </div>
+                                        <div class="col-md-4 mb-30px">
+                                            <div class="product bg-white">
+                                                <div class="product-like">
+                                                    <i class="ri-heart-line ri-xl"></i>
+                                                </div>
+                                                <div class="image-product">
+                                                    <img class="img-fluid" src="src/img/LotusArchiAssets/10 gr.jpg" alt="">
+                                                </div>
+                                                <button type="submit" class="btn col-12 mt-3 btn-des-product border-radius0" data-toggle="modal" data-target="#quickview" >Quick View</button>
+                                                <div class="description-product">
+                                                    <div class="row">
+                                                        <div class="col-md-8">
+                                                            <p class="product-name">Emas Antam 1gr</p>
+                                                            <h5 class="product-price">Rp980,748</h5>
+                                                        </div>
+                                                        <div class="col-md-4 d-flex justify-content-end align-items-center">
+                                                            <a href=""><i class="ri-add-fill ri-2x"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>     
+                                        </div>
+                                        <div class="col-md-4 mb-30px">
+                                            <div class="product bg-white">
+                                                <div class="product-like">
+                                                    <i class="ri-heart-line ri-xl"></i>
+                                                </div>
+                                                <div class="image-product">
+                                                    <img class="img-fluid" src="src/img/LotusArchiAssets/100 gr.jpg" alt="">
+                                                </div>
+                                                <button type="submit" class="btn col-12 mt-3 btn-des-product border-radius0" data-toggle="modal" data-target="#quickview" >Quick View</button>
+                                                <div class="description-product">
+                                                    <div class="row">
+                                                        <div class="col-md-8">
+                                                            <p class="product-name">Emas Antam 1gr</p>
+                                                            <h5 class="product-price">Rp980,748</h5>
+                                                        </div>
+                                                        <div class="col-md-4 d-flex justify-content-end align-items-center">
+                                                            <a href=""><i class="ri-add-fill ri-2x"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>   
+                                        </div>
+                                        <div class="col-md-4 mb-30px">
+                                            <div class="product bg-white">
+                                                <div class="product-like">
+                                                    <i class="ri-heart-line ri-xl"></i>
+                                                </div>
+                                                <div class="image-product">
+                                                    <img class="img-fluid" src="src/img/LotusArchiAssets/100 gr.jpg" alt="">
+                                                </div>
+                                                <button type="submit" class="btn col-12 mt-3 btn-des-product border-radius0" data-toggle="modal" data-target="#quickview" >Quick View</button>
+                                                <div class="description-product">
+                                                    <div class="row">
+                                                        <div class="col-md-8">
+                                                            <p class="product-name">Emas Antam 1gr</p>
+                                                            <h5 class="product-price">Rp980,748</h5>
+                                                        </div>
+                                                        <div class="col-md-4 d-flex justify-content-end align-items-center">
+                                                            <a href=""><i class="ri-add-fill ri-2x"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>        
+                                        </div>
+                                        <div class="col-md-4 mb-30px">
+                                            <div class="product bg-white">
+                                                <div class="product-like">
+                                                    <i class="ri-heart-line ri-xl"></i>
+                                                </div>
+                                                <div class="image-product">
+                                                    <img class="img-fluid" src="src/img/LotusArchiAssets/100 gr.jpg" alt="">
+                                                </div>
+                                                <button type="submit" class="btn col-12 mt-3 btn-des-product border-radius0" data-toggle="modal" data-target="#quickview" >Quick View</button>
+                                                <div class="description-product">
+                                                    <div class="row">
+                                                        <div class="col-md-8">
+                                                            <p class="product-name">Emas Antam 1gr</p>
+                                                            <h5 class="product-price">Rp980,748</h5>
+                                                        </div>
+                                                        <div class="col-md-4 d-flex justify-content-end align-items-center">
+                                                            <a href=""><i class="ri-add-fill ri-2x"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>       
+                                        </div>
+                                        <div class="col-md-4 mb-30px">
+                                            <div class="product bg-white">
+                                                <div class="product-like">
+                                                    <i class="ri-heart-line ri-xl"></i>
+                                                </div>
+                                                <div class="image-product">
+                                                    <img class="img-fluid" src="src/img/LotusArchiAssets/100 gr.jpg" alt="">
+                                                </div>
+                                                <button type="submit" class="btn col-12 mt-3 btn-des-product border-radius0" data-toggle="modal" data-target="#quickview" >Quick View</button>
+                                                <div class="description-product">
+                                                    <div class="row">
+                                                        <div class="col-md-8">
+                                                            <p class="product-name">Emas Antam 1gr</p>
+                                                            <h5 class="product-price">Rp980,748</h5>
+                                                        </div>
+                                                        <div class="col-md-4 d-flex justify-content-end align-items-center">
+                                                            <a href=""><i class="ri-add-fill ri-2x"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>     
+                                        </div>
+                                        <div class="col-md-4 mb-30px">
+                                            <div class="product bg-white">
+                                                <div class="product-like">
+                                                    <i class="ri-heart-line ri-xl"></i>
+                                                </div>
+                                                <div class="image-product">
+                                                    <img class="img-fluid" src="src/img/LotusArchiAssets/100 gr.jpg" alt="">
+                                                </div>
+                                                <button type="submit" class="btn col-12 mt-3 btn-des-product border-radius0" data-toggle="modal" data-target="#quickview" >Quick View</button>
+                                                <div class="description-product">
+                                                    <div class="row">
+                                                        <div class="col-md-8">
+                                                            <p class="product-name">Emas Antam 1gr</p>
+                                                            <h5 class="product-price">Rp980,748</h5>
+                                                        </div>
+                                                        <div class="col-md-4 d-flex justify-content-end align-items-center">
+                                                            <a href=""><i class="ri-add-fill ri-2x"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>       
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="pagination-product float-right">
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination">
+                                              <li class="page-item disabled">
+                                                <a class="page-link " href="#" aria-label="Previous" >
+                                                  <span aria-hidden="true">&laquo;</span>
+                                                  <span class="sr-only">Previous</span>
+                                                </a>
+                                              </li>
+                                              <li class="page-item"><a class="active page-link " href="#">1</a></li>
+                                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                              <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Next">
+                                                  <span aria-hidden="true">&raquo;</span>
+                                                  <span class="sr-only">Next</span>
+                                                </a>
+                                              </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="footer-section-header">
+                                    Client Care
+                                </div>
+                                <ul class="footer-section-list">
+                                    <li>
+                                        <a href="http://">Contact Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://">Verify</a>                                        
+                                    </li>
+                                    <li>
+                                        <a href="http://">FAQ</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://">Quality Police</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="footer-section-header">
+                                    About Lotus Archi
+                                </div>
+                                <ul class="footer-section-list">
+                                    <li>
+                                        <a href="http://">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://">Terms & Condition</a>                                        
+                                    </li>
+                                    <li>
+                                        <a href="http://">Our Services</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="footer-section-header">
+                                    Quick Links
+                                </div>
+                                <ul class="footer-section-list">
+                                    <li>
+                                        <a href="http://">Collection</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://">Promotion</a>                                        
+                                    </li>
+                                    <li>
+                                        <a href="http://">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row footer-social-media d-flex justify-content-between my-2">
+                            <div class="d-flex align-items-center col-md-3 icons-social-media">
+                                <i class="ri-instagram-fill ri-xl pr-2"></i>
+                                <i class="ri-facebook-box-fill ri-xl pr-2"></i>
+                                <i class="ri-youtube-fill ri-xl pr-2"></i>
+                            </div>
+                            <div class="col-md-9">
+                                <img src="src/img/logobank.png" alt="" srcset="" class="d-none d-lg-block img-fluid">
+                                <img src="src/img/bankmobile.png" alt="" srcset="" class="d-lg-none d-sm-block img-fluid">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 footer-standard-info">
+                                <img src="src/img/image 34.png" alt="" srcset="" class="mr-3 img-fluid">
+                                <img src="src/img/image 34 (2).png" alt="" srcset="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-section-header">
+                            Address
+                        </div>
+                        <div class="footer-info-address">
+                            <h5>Lotus Archi (PT Elang Mulia Abadi Sempurna)</h5>
+                            <p>
+                                Menara Rajawali <br>
+                                Lantai 19, Jl. DR Ide Anak Agung Gede Agung, <br>
+                                Kawasan Mega Kuningan, <br>
+                                Jakarta Selatan 12950
+                            </p>
+                        </div>
+                        <div class="footer-info-address">
+                            <h5>Kawasan Industri Cimareme, Bandung</h5>
+                            <p>
+                                Jl. Industrial Cimareme 1 No. 8 <br>
+                                Cipendeuy Padalarang, Cipeundeuy, Padalarang, <br>
+                                Kabupaten Bandung Barat, <br>
+                                Jawa Barat 40553
+                            </p>
+                        </div>                              
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!--Modal-->
+    <div class="modal fade" id="quickview" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <img class="w-100" src="src/img/image 3.png">
+                        </div>
+                        <div class="col-6">
+                            <div class="product-detail">
+                                <h3>Emas 25Gr</h3>
+                                <hr>
+                                <h4>Rp 5.000.000</h4>
+                                <div class="qty">
+                                    <div class="d-flex justify-content-between mt-1">
+                                        <h6 class="mb-0 align-self-center">
+                                            <span class="minus ri-subtract-line mr-1" id="minus"></span>
+                                            <input type="number" id="count" class="count text-center" name="qty"
+                                                value="1">
+                                            <span class="plus ri-add-line ml-1" id="plus"></span>
+                                        </h6>
+                                        <button class="btn btn-lotus">Add To Cart</button>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="justify-content-between d-flex">
+                                    <p>Category</p>
+                                    <p>Lotus Archi Merah Putih</p>
+                                </div>
+                                <div class="justify-content-between d-flex">
+                                    <p class="m-0">Tag</p>
+                                    <p class="m-0">100Gram</p>
+                                </div>
+                                <hr>
+                                <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio nihil est ducimus. Nemo, autem voluptatibus, necessitatibus aperiam est cupiditate voluptate inventore consequatur nobis perspiciatis blanditiis, accusantium non obcaecati modi ratione!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('#count').prop('disabled', true);
+            $(document).on('click', '#plus', function () {
+                $('#count').val(parseInt($('#count').val()) + 1);
+            });
+            $(document).on('click', '#minus', function () {
+                $('#count').val(parseInt($('#count').val()) - 1);
+                if ($('#count').val() == 0) {
+                    $('#count').val(1);
+                }
+            });
+            $('#count2').prop('disabled', true);
+            $(document).on('click', '#plus2', function () {
+                $('#count2').val(parseInt($('#count2').val()) + 1);
+            });
+            $(document).on('click', '#minus2', function () {
+                $('#count2').val(parseInt($('#count2').val()) - 1);
+                if ($('#count2').val() == 0) {
+                    $('#count2').val(1);
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
